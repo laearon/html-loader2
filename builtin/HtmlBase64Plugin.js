@@ -55,4 +55,4 @@ function imgtag2base64(html, filePath, basePath, size) {
     });
 }
 
-exports.HtmlBase64Plugin = HtmlBase64Plugin;
+module.exports = HtmlBase64Plugin;
