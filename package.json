@@ -1,0 +1,24 @@
+{
+  "name": "html-loader2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcfme/html-loader2.git"
+  },
+  "author": "Liu Chaofan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcfme/html-loader2/issues"
+  },
+  "homepage": "https://github.com/lcfme/html-loader2#readme",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "pump": "^3.0.0",
+    "subarg": "^1.0.0"
+  }
+}
