@@ -39,13 +39,16 @@ class HTMLLoader extends EventEmitter {
                 if (!_.isFunction(pluginName))
                     throw new Error(`plugin[${i}] is invalid`);
                 if (!_.isPlainObject(pluginOpts)) pluginOpts = {};
-                currentPlugin = new pluginName(pluginOpts);
+                currentPlugin = [pluginName, pluginOpts];
                 plugins.push(currentPlugin);
             }
         }
         delete opts.plugins;
         this._opts = opts;
-        plugins.unshift(new UniversalInterfaceStream(opts));
+        plugins.unshift([UniversalInterfaceStream, {}]);
+        plugins = plugins.map(plugin => {
+            return new plugin[0](_.assign({}, opts, plugin[1]));
+        });
         this._plugins = plugins;
         this.pipeline = this.createPipeline(
             fs.createReadStream(opts.filePath),

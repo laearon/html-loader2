@@ -11,6 +11,7 @@ class Fake extends Transform {
         callback();
     }
     _flush(callback) {
+        debugger;
         this._data = '<!-- HtmlLoader bundled -->\n' + this._data;
         this.push(this._data);
         callback();
