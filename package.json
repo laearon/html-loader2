@@ -1,8 +1,9 @@
 {
   "name": "html-loader2",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.3",
+  "description": "a loader to manage html files an entry",
   "main": "index.js",
+  "bin": "bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +23,10 @@
     "mime": "^2.3.1",
     "pump": "^3.0.0",
     "subarg": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "loader",
+    "html",
+    "package"
+  ]
 }
