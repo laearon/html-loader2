@@ -1,6 +1,6 @@
 {
   "name": "html-loader2",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "a loader to manage html files an entry",
   "main": "index.js",
   "bin": "bin.js",

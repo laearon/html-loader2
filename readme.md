@@ -15,7 +15,7 @@ html-loader 是一个基于流处理 html 文件的工具。都到了8102年，�
 > 在 bash 中使用
 
 ```bash
-html-loader2 --plugin [built-in/  --size=1] --filePath=path/to/you.html --basePath=/path/
+html-loader2 --filePath html-loader2/test/a.html --basePath=html-loader2/test --plugin [html-loader2/builtin/HtmlBase64Plugin --size=1000]
 ```
 
 > 在 node 中使用
