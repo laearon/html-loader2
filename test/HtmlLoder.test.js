@@ -9,6 +9,5 @@ const loader = new HTMLLoader({
 });
 
 loader.on('finish', function(data) {
-    debugger;
     console.log(data);
 });

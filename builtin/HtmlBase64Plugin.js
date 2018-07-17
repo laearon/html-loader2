@@ -31,7 +31,6 @@ function imgtag2base64(html, filePath, basePath, size) {
     basePath = basePath || filePath;
     return html.replace(reg, function($0, $1, $2, $3) {
         try {
-            debugger;
             var src = $2;
             var dirname = path.dirname(filePath);
             var destFile;
